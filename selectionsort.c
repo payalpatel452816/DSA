@@ -15,12 +15,12 @@
         small=i;
       for(j = i+1; j < n; j++)    
         {    
-            if(a[j] > a[i])   
+            if(a[i] < a[j])   
              small=j;
             {    
                     int temp = a[small];  
-                    a[small] = a[j];  
-                    a[j] = temp;  
+                    a[small] = a[i];  
+                    a[i] = temp;  
             }     
         }     
     }     
